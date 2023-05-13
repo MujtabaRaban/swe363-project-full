@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dammamsportcentre-add-stadums</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="index-login-admin.html">
+              <h1><span>D</span>ammam <span>S</span>port <span>C</span>entre</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="index-login-admin.html" data-after="Home">Home</a></li>
+              <li><a href="profile-admin.html" data-after="profile">profile</a></li>
+              <li><a href="index-dash.html" data-after="Dashboard">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- hero-stadiums Section  -->
+    <section id="hero-stadiums">
+      <div class="hero-stadiums container">
+        <div>
+          <h1>Add / Edit your Stadium</h1>
+          <a href="#" type="button" class="cta" onclick="popupTogglestadiums();">stadium-details</a>
+          <br>
+          <h1>contact Phone</h1>
+          <form class="phone-number" action="" method="get">
+            <fieldset>
+              <input type="tel" name="tel" placeholder="EX: 56 471 1212" required
+              pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}">
+            </fieldset>
+            <br>
+            <input type="submit" name="" value="check validation">
+          </form>
+          <h1>Reserving price</h1>
+          <input type="number" name="price" value="" placeholder="EX: 200 riyals">
+          <div class="add-stadium">
+            <input type="submit" name="" value="Add the stadium" onclick="popupToggle();">
+          </div>
+          <div id="popupstadiums">
+            <div class="content">
+
+              <h2>Stadium-picture</h2>
+              <form class="Stadium-picture" action="index.html" method="img">
+                <input type="file" name="" value="">
+              </form>
+              <h2>Stadium name</h2>
+              <div class="inputbox">
+                <input type="text" placeholder="EX: prince mohammed ...">
+              </div>
+              <h2>pitch-type</h2>
+              <div class="inputbox">
+                <div class="select">
+                  <select id="pitch-type" name="pitch-type">
+                    <option value="text">Football</option>
+                    <option value="text">Tennis</option>
+                    <option value="text">Basketball</option>
+                    <option value="text">Varsity</option>
+                    <option value="text">Handball</option>
+                    <option value="text">Volleyball</option>
+                  </select>
+                </div>
+              </div>
+              <h2>time open</h2>
+              <div class="inputbox">
+                <input type="datetime-local" name="time open ">
+              </div>
+              <h2>time close</h2>
+              <div class="inputbox">
+                <input type="datetime-local" name="time close">
+              </div>
+              <h2>Location</h2>
+              <div class="inputbox">
+                <input type="url" name="location url" placeholder="EX: <iframe src=https://www.google.com/maps/d/embed?mid=1Dn05jKVkkFO-1pMcELzTKW1hPWU&hl=en&ehbc=2E312F width=640 height=480></iframe>">
+              </div>
+              <div class="inputbox">
+                <input type="button" value="SAVE" class="cta">
+              </div>
+            </div>
+            <a class="close" onclick="popupTogglestadiums();"><img src="./css/img/cancel.png"></a>
+          </div>
+          <script >
+            function popupTogglestadiums(){
+              const popupstadiums = document.getElementById('popupstadiums');
+              popupstadiums.classList.toggle('active')
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <!-- End hero-stadiums Section  -->
+
+
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./css/img/dammamlogo.png">
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>US</span></h1>
+          <h2> Dammam Sport Centre</h2>
+          <p>provides some special offers to members by helping them to choose the best sporting venues to get the best experience, fastest time, and safety.</p>
+          <a href="login-admin.html" class="cta">be part of our members</a>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+            <div class="contact-info">
+              <h1>Service Phone</h1>
+              <h2>+996 56 365  4874</h2>
+              <h2>+996 54 341  1775</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>Dammamsportcentre@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Saudi Arabia , Eastern Province , Dammam </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>D</span>ammam <span>S</span>port <span>C</span>entre</h1>
+        </div>
+        <h2>Your Complete Web Solution</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2023 Dammam sport centre. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src=".app.js"></script>
+
+
+  </body>
+</html>
